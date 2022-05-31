@@ -3,7 +3,7 @@
     String userName = request.getParameter("userName");    
     String password = request.getParameter("password");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://database-1.c8d155eihjld.us-east-1.rds.amazonaws.com:3306/jwt","ravi", "Admin123*");
+    Connection con = DriverManager.getConnection("jdbc:mysql://database-1.c8d155eihjld.us-east-1.rds.amazonaws.com:3306/jwt","admin", "Khaleel565");
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select * from USER where userName='" +userName + "' and password='" +password + "'");
